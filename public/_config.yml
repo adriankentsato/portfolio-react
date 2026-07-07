@@ -1,0 +1,6 @@
+# Disable Jekyll processing
+markdown: kramdown
+theme: minima
+exclude:
+  - _next
+  - node_modules
