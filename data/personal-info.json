@@ -1,0 +1,204 @@
+{
+  "name": "Kent Adrian Sato",
+  "title": "Senior Full-Stack Engineer",
+  "profileImage": "/profile-pictures/profile1.png",
+  "description": "I'm a developer with a passion for building beautiful and functional web applications. I combine clean design with efficient code to deliver exceptional user experiences.",
+  "email": "adriankentsato@gmail.com",
+  "location": "Cebu, Philippines",
+  "responseTime": "Within 24-48 hours",
+  "socialLinks": {
+    "github": "https://github.com/adriankentsato",
+    "linkedin": "https://linkedin.com/in/adriankentsato"
+  },
+  "navigation": {
+    "logo": {
+      "text": "Web Profile",
+      "showIcon": true
+    },
+    "links": [
+      {
+        "name": "Home",
+        "href": "#"
+      },
+      {
+        "name": "About",
+        "href": "#about"
+      },
+      {
+        "name": "Skills",
+        "href": "#skills"
+      },
+      {
+        "name": "Experience",
+        "href": "#experience"
+      },
+      {
+        "name": "Projects",
+        "href": "#projects"
+      },
+      {
+        "name": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "about": {
+    "journey": "With years of experience in web development, I specialize in modern technologies and best practices. I believe in continuous learning and staying updated with the latest industry trends.",
+    "whatIDo": [
+      "Build responsive and accessible web applications",
+      "Create intuitive user interfaces",
+      "Develop scalable backend systems",
+      "Collaborate with cross-functional teams"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Architecture & Methodologies",
+      "skills": [
+        { "name": "Systems Integration", "icon": "FaProjectDiagram" },
+        { "name": "Technical Architecture", "icon": "FaSitemap" },
+        { "name": "DevOps", "icon": "FaCogs" },
+        { "name": "Agile/Scrum", "icon": "FaTasks" },
+        { "name": "CI/CD Pipelines", "icon": "SiGithubactions" },
+        { "name": "Risk Assessment", "icon": "FaShieldAlt" },
+        { "name": "SDLC Management", "icon": "FaProjectDiagram" }
+      ]
+    },
+    {
+      "category": "Languages",
+      "skills": [
+        { "name": "JavaScript", "icon": "FaJs" },
+        { "name": "TypeScript", "icon": "SiTypescript" },
+        { "name": "HTML", "icon": "FaHtml5" },
+        { "name": "CSS", "icon": "FaCss3" },
+        { "name": "PHP", "icon": "FaPhp" },
+        { "name": "Java", "icon": "FaJava" },
+        { "name": "C/C++", "icon": "FaCode" },
+        { "name": "C#", "icon": "FaCode" },
+        { "name": "Bash", "icon": "FaTerminal" }
+      ]
+    },
+    {
+      "category": "Backend Environments",
+      "skills": [
+        { "name": "Node.js", "icon": "FaNodeJs" },
+        { "name": "REST APIs", "icon": "FaServer" },
+        { "name": "GraphQL", "icon": "SiGraphql" },
+        { "name": "Symfony", "icon": "SiSymfony" },
+        { "name": "JSP", "icon": "FaJava" },
+        { "name": "Kafka", "icon": "SiApache" }
+      ]
+    },
+    {
+      "category": "Frontend Frameworks",
+      "skills": [
+        { "name": "Angular", "icon": "FaAngular" },
+        { "name": "React", "icon": "FaReact" },
+        { "name": "jQuery", "icon": "SiJquery" },
+        { "name": "Bootstrap", "icon": "FaBootstrap" },
+        { "name": "Material UI", "icon": "FaReact" }
+      ]
+    },
+    {
+      "category": "Cloud & DevOps Infrastructure",
+      "skills": [
+        { "name": "Amazon Web Services (AWS)", "icon": "FaAws" },
+        { "name": "Docker", "icon": "FaDocker" },
+        { "name": "Vagrant", "icon": "SiVagrant" },
+        { "name": "VirtualBox", "icon": "SiVirtualbox" },
+        { "name": "GitHub Actions", "icon": "SiGithubactions" },
+        { "name": "Nginx", "icon": "SiNginx" },
+        { "name": "Apache Server", "icon": "SiApache" },
+        { "name": "Apache Tomcat", "icon": "SiApache" }
+      ]
+    },
+    {
+      "category": "Databases & Caching",
+      "skills": [
+        { "name": "PostgreSQL", "icon": "SiPostgresql" },
+        { "name": "MySQL", "icon": "SiMysql" },
+        { "name": "Redis", "icon": "SiRedis" }
+      ]
+    },
+    {
+      "category": "Testing Frameworks",
+      "skills": [
+        { "name": "Jest", "icon": "SiJest" },
+        { "name": "Karma", "icon": "FaVial" },
+        { "name": "Jasmine", "icon": "FaFlask" },
+        { "name": "Playwright", "icon": "FaTheaterMasks" },
+        { "name": "Puppeteer", "icon": "SiPuppeteer" }
+      ]
+    },
+    {
+      "category": "Tools & Ecosystem",
+      "skills": [
+        { "name": "Git", "icon": "FaGitAlt" },
+        { "name": "GitHub", "icon": "FaGithub" },
+        { "name": "GitLab", "icon": "FaGitlab" },
+        { "name": "Bitbucket", "icon": "FaBitbucket" },
+        { "name": "Postman", "icon": "SiPostman" },
+        { "name": "Apidog", "icon": "FaBug" },
+        { "name": "JIRA", "icon": "SiJira" },
+        { "name": "Airtable", "icon": "SiAirtable" },
+        { "name": "Confluence", "icon": "SiConfluence" },
+        { "name": "Zoho", "icon": "FaCloud" },
+        { "name": "OAuth", "icon": "FaKey" },
+        { "name": "JWT", "icon": "FaLock" },
+        { "name": "Windows", "icon": "FaWindows" },
+        { "name": "MacOS", "icon": "FaApple" },
+        { "name": "Linux", "icon": "FaLinux" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Radiant Logistics, Inc.",
+      "role": "Senior Full-Stack Engineer",
+      "duration": "March 2023 - Present",
+      "description": "Architected a highly scalable migration from legacy systems to a modern AWS Lambda and Node.js containerized environment serving over 1,000 users with zero downtime. I led a team of three developers, establishing development best practices and technical documentation that cut new-hire onboarding time by 60%. To maximize efficiency, I leveraged AI-assisted development tools and LLMs to optimize complex processes and boost sprint velocity. Operating in a global, cross-functional environment, I collaborated closely with international engineering teams and leadership to deliver robust products within 2-week Agile cycles.",
+      "points": []
+    },
+    {
+      "company": "Above Digital (prev. Our Global Team, Inc.)",
+      "role": "Senior Full-Stack Developer",
+      "duration": "March 2021 - March 2023",
+      "description": "Fstered a culture of continuous improvement by leading and mentoring a team of six developers through structured code reviews. My technical leadership extended to system architecture, where I successfully automated manual business processes by 75% and built a scalable platform supporting 100+ concurrent users with 99.9% uptime. I owned the full Agile SDLC, seamlessly bridging the gap between initial system design and final product deployment. Through this hands-on governance, I consistently ensured stable, high-performing software releases.",
+      "points": []
+    },
+    {
+      "company": "Our Global Team, Inc.",
+      "role": "Junior/Mid-Level Developer",
+      "duration": "October 2018 - March 2021",
+      "description": "Engineered the core architectural foundation for a massive end-to-end ERP solution, building out critical finance, inventory, and customer management modules from the ground up. My role quickly expanded as I took full ownership of the system codebase and consistently delivered high-complexity enterprise features. This strong technical performance and proactive attitude allowed me to rapidly scale my responsibilities within the team. Consequently, I demonstrated senior-level impact ahead of my peers, earning an accelerated promotion to Senior Developer.",
+      "points": []
+    },
+    {
+      "company": "Freelance Work",
+      "role": "Web Developer & Digital Services Provider",
+      "duration": "February 2017 - October 2018",
+      "description": "Managed end-to-end business operations for multiple clients, handling everything from initial project scoping and timeline estimation to final invoicing. On the technical side, I built custom WordPress websites for local small businesses and entrepreneurs, developing bespoke themes and integrating complex third-party plugins. Beyond web development, I provided versatile digital support by optimizing administrative workflows and designing marketing assets using Adobe Creative Suite. This comprehensive, client-first approach allowed me to maintain a 95% client satisfaction rate across all projects.",
+      "points": []
+    }
+  ],
+  "projects": [
+    {
+      "title": "Project One",
+      "description": "A full-stack web application built with modern technologies.",
+      "technologies": ["React", "Node.js", "TypeScript"],
+      "status": "Completed"
+    },
+    {
+      "title": "Project Two",
+      "description": "An innovative mobile application for productivity.",
+      "technologies": ["React Native", "Firebase", "Redux"],
+      "status": "In Progress"
+    },
+    {
+      "title": "Project Three",
+      "description": "A data visualization dashboard for analytics.",
+      "technologies": ["Vue.js", "D3.js", "Python"],
+      "status": "Completed"
+    }
+  ]
+}
