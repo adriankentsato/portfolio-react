@@ -18,7 +18,7 @@
     },
     "links": [
       {
-        "name": "Home",
+        "name": "Kent",
         "href": "#"
       },
       {
@@ -190,21 +190,21 @@
   ],
   "projects": [
     {
-      "title": "Project One",
+      "title": "Customer Portal",
       "description": "A full-stack web application built with modern technologies.",
-      "technologies": ["React", "Node.js", "TypeScript"],
+      "technologies": ["Angular", "Node.js", "TypeScript", "AWS"],
+      "status": "Maintenance"
+    },
+    {
+      "title": "ERP System",
+      "description": "An enterprise resource planning system for business operations.",
+      "technologies": ["Angular", "Node.js", "TypeScript"],
       "status": "Completed"
     },
     {
-      "title": "Project Two",
-      "description": "An innovative mobile application for productivity.",
-      "technologies": ["React Native", "Firebase", "Redux"],
-      "status": "In Progress"
-    },
-    {
-      "title": "Project Three",
-      "description": "A data visualization dashboard for analytics.",
-      "technologies": ["Vue.js", "D3.js", "Python"],
+      "title": "Survey System",
+      "description": "A survey system for collecting and analyzing user feedback.",
+      "technologies": ["JSP", "MySQL", "JavaScript", "Java"],
       "status": "Completed"
     }
   ]

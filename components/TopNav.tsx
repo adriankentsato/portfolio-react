@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Code2, Ghost } from 'lucide-react';
+import { Ghost, SquareTerminal } from 'lucide-react';
 import personalInfo from '@/data/personal-info.json';
 
 interface TopNavProps {
@@ -107,7 +107,7 @@ export default function TopNav({ logo, userName, userEmail }: TopNavProps) {
           {logo || (
             <Link href="/" className="flex items-center space-x-2">
               <div className="relative w-8 h-8 text-blue-600 dark:text-blue-400">
-                <Code2 className="absolute inset-0 w-8 h-8 block dark:hidden" />
+                <SquareTerminal className="absolute inset-0 w-8 h-8 block dark:hidden" />
                 <Ghost className="absolute inset-0 w-8 h-8 hidden dark:block" />
               </div>
               <span className="text-xl font-bold text-gray-900 dark:text-white">Kent Adrian Sato</span>

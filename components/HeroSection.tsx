@@ -84,7 +84,7 @@ export default function HeroSection({ name, title, description, profileImage, so
                   </div>
                 </div>
               </div>
-              <SocialLinks links={socialLinks} />
+              <SocialLinks links={socialLinks} className="flex justify-center w-72 md:w-80" />
             </div>
           </ScrollReveal>
         </div>

@@ -15,24 +15,26 @@ interface SocialLinksProps {
     website?: string;
   };
   className?: string;
+  iconSize?: string;
+  containerSize?: string;
 }
 
-export default function SocialLinks({ links, className = "" }: SocialLinksProps) {
+export default function SocialLinks({ links, className = "", iconSize = "w-6 h-6", containerSize = "w-12 h-12" }: SocialLinksProps) {
   const socialConfigs: Record<string, { icon: React.ReactNode }> = {
     github: {
-      icon: <FaGithub className="w-6 h-6 text-gray-900 dark:text-white" />,
+      icon: <FaGithub className={`${iconSize} text-gray-900 dark:text-white`} />,
     },
     facebook: {
-      icon: <FaFacebook className="w-6 h-6 text-gray-900 dark:text-white" />,
+      icon: <FaFacebook className={`${iconSize} text-gray-900 dark:text-white`} />,
     },
     linkedin: {
-      icon: <FaLinkedin className="w-6 h-6 text-gray-900 dark:text-white" />,
+      icon: <FaLinkedin className={`${iconSize} text-gray-900 dark:text-white`} />,
     },
     email: {
-      icon: <MdEmail className="w-6 h-6 text-gray-900 dark:text-white" />,
+      icon: <MdEmail className={`${iconSize} text-gray-900 dark:text-white`} />,
     },
     website: {
-      icon: <FaGlobe className="w-6 h-6 text-gray-900 dark:text-white" />,
+      icon: <FaGlobe className={`${iconSize} text-gray-900 dark:text-white`} />,
     },
   };
 
@@ -48,7 +50,7 @@ export default function SocialLinks({ links, className = "" }: SocialLinksProps)
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow"
+            className={`${containerSize} rounded-full bg-white dark:bg-gray-800 shadow-lg flex items-center justify-center hover:shadow-xl transition-shadow`}
           >
             {socialConfigs[key].icon}
           </a>

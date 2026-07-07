@@ -102,7 +102,7 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
     <section id="skills" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">Skills & Technologies</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">Skills & Tech Stacks</h1>
         </ScrollReveal>
         <div className="space-y-8">
           {skills.map((category, categoryIndex) => (

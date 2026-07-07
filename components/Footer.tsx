@@ -12,9 +12,11 @@ export default function Footer() {
           © {currentYear} {personalInfo.name}. All rights reserved.
         </div>
         
-        <SocialLinks 
-          links={personalInfo.socialLinks} 
+        <SocialLinks
+          links={personalInfo.socialLinks}
           className="flex items-center space-x-2"
+          iconSize="w-4 h-4"
+          containerSize="w-8 h-8"
         />
       </div>
     </footer>

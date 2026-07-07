@@ -30,7 +30,7 @@ export default function ExperienceSection({ experience, onExperienceClick }: Exp
                 className="relative pl-8 pb-20 last:pb-0 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg p-4 transition-colors"
                 onClick={() => onExperienceClick(exp)}
               >
-                <div className="absolute -left-[11px] top-0 w-5 h-5 bg-blue-600 dark:bg-blue-400 rounded-full shadow-md" />
+                <div className="absolute -left-[11px] top-5 w-5 h-5 bg-blue-600 dark:bg-blue-400 rounded-full shadow-md" />
                 <div className="mb-1 flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                     {exp.role}
@@ -46,7 +46,7 @@ export default function ExperienceSection({ experience, onExperienceClick }: Exp
                   {exp.description}
                 </p>
                 {exp.technologies && exp.technologies.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 pb-4">
                     {exp.technologies.map((tech, index) => (
                       <span
                         key={index}
