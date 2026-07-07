@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopNav from "@/components/TopNav";
+import Footer from "@/components/Footer";
 import ThemeToggle from "@/components/ThemeToggle";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
@@ -32,7 +33,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <title>Kent Adrian Sato | Senior Software Engineer</title>
         <script
+          type={typeof window === 'undefined' ? "text/javascript" : "text/plain"}
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
@@ -52,7 +56,8 @@ export default function RootLayout({
       <ThemeProvider>
         <body className="min-h-full flex flex-col">
           <TopNav />
-          <main className="pt-16">{children}</main>
+          <main className="pt-16 pb-16 flex-grow">{children}</main>
+          <Footer />
           <ThemeToggle />
         </body>
       </ThemeProvider>

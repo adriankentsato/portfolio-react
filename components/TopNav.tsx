@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { Code2, Ghost } from 'lucide-react';
 import personalInfo from '@/data/personal-info.json';
 
 interface TopNavProps {
@@ -105,20 +106,17 @@ export default function TopNav({ logo, userName, userEmail }: TopNavProps) {
         <div className="flex items-center">
           {logo || (
             <Link href="/" className="flex items-center space-x-2">
-              <svg
-                className="w-8 h-8 text-blue-600 dark:text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
-              <span className="text-xl font-bold text-gray-900 dark:text-white">Web Profile</span>
+              <div className="relative w-8 h-8 text-blue-600 dark:text-blue-400">
+                <Code2 className="absolute inset-0 w-8 h-8 block dark:hidden" />
+                <Ghost className="absolute inset-0 w-8 h-8 hidden dark:block" />
+              </div>
+              <span className="text-xl font-bold text-gray-900 dark:text-white">Kent Adrian Sato</span>
             </Link>
           )}
         </div>
 
-        {/* Center - Navigation links */}
-        <div className="hidden md:flex items-center space-x-8">
+        {/* Right side - Navigation links */}
+        <div className="hidden md:flex items-center space-x-8 ml-auto">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -135,7 +133,7 @@ export default function TopNav({ logo, userName, userEmail }: TopNavProps) {
         </div>
 
         {/* Right side - User menu */}
-        <div className="relative" ref={dropdownRef}>
+        {/* <div className="relative" ref={dropdownRef}>
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             className="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-full p-1"
@@ -161,7 +159,7 @@ export default function TopNav({ logo, userName, userEmail }: TopNavProps) {
             </svg>
           </button>
 
-          {/* Dropdown menu */}
+          {/ Dropdown menu /}
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50">
               <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-700">
@@ -238,7 +236,7 @@ export default function TopNav({ logo, userName, userEmail }: TopNavProps) {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </nav>
   );

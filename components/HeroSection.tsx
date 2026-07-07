@@ -13,6 +13,7 @@ interface HeroSectionProps {
     github?: string;
     facebook?: string;
     linkedin?: string;
+    email?: string;
     website?: string;
   };
 }
@@ -23,21 +24,21 @@ export default function HeroSection({ name, title, description, profileImage, so
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <ScrollReveal direction="up" threshold={0} delay={100} className="w-full">
-            <div className="space-y-8">
+            <div className="space-y-8 text-center lg:text-left">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
                   Hello, I'm{' '}
-                  <span className="text-blue-600 dark:text-blue-400">{name}</span>
+                  <span className="text-blue-600 dark:text-blue-400">{name.split(' ')[0]}</span>
                 </h1>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-6">
                   {title}
                 </h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed">
+                <p className="text-lg text-gray-700 dark:text-gray-300 max-w-none sm:max-w-2xl leading-relaxed mx-auto lg:mx-0">
                   {description}
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a
                   href="#contact"
                   className="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-full font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-200"
@@ -47,12 +48,16 @@ export default function HeroSection({ name, title, description, profileImage, so
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
-                <button className="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-full font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-200">
+                <a
+                  href="/CVs/CV - Kent Adrian Sato - 2026.pdf"
+                  download
+                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-full font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-transition-all duration-200"
+                >
                   Download Resume
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </ScrollReveal>
