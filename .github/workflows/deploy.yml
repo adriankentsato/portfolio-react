@@ -45,14 +45,21 @@ jobs:
       - name: Clear target directory
         working-directory: target
         run: |
-          find . -mindepth 1 -not -path './.git/*' -not -path './.git' -delete
+          find . -mindepth 1 -not -path './.git/*' -not -path './.git' -not -path './.github/*' -not -path './.github' -delete
       
       - name: Copy built files
         run: cp -r source/out/* target/
       
+      - name: Copy public files
+        run: |
+          cp source/public/.nojekyll target/ || echo "No .nojekyll file"
+          cp source/public/_config.yml target/ || echo "No _config.yml file"
+      
       - name: Commit and push
         working-directory: target
         run: |
+          git status
           git add .
+          git status
           git commit -m "Deploy from web-profile"
           git push
