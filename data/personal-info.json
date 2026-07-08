@@ -186,6 +186,28 @@
         "MySQL",
         "Shopify"
       ]
+    },
+
+    {
+      "company": "NESO Technical Solutions, Inc.",
+      "role": "Web Developer Intern",
+      "duration": "March 2017 - May 2017",
+      "companyUrl": null,
+      "logo": "/company-logos/neso-io.png",
+      "description": "Contributed to client-facing web projects by designing UI mockups, building responsive web pages, and supporting QA efforts. Worked closely with project managers and developers to ensure smooth execution, timely delivery, and a positive user experience.",
+      "points": [
+        "Designed Sitemaps and Website Mockups - Created wireframes and high-fidelity mockups tailored to client needs. Ensured designs supported intuitive navigation, clear content hierarchy, and responsive layouts.",
+        "Translated Designs into Functional Web Pages - Developed web pages using HTML, CSS, and JavaScript based on approved mockups. Ensured cross-browser compatibility and mobile responsiveness.",
+        "Tested and Debugged Web Applications - Performed functional testing to identify and resolve layout inconsistencies, bugs, and usability issues—contributing to more stable and polished releases.",
+        "Collaborated with Project Managers for Progress Reporting - Provided daily updates and collaborated closely with managers to align development milestones with client expectations and project timelines.",
+        "Enhanced User Experience Through Iterative Improvements - Incorporated feedback from QA and clients to refine page interactions, improve performance, and elevate overall site usability."
+      ],
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UI/UX Design"
+      ]
     }
   ],
   "projects": [
