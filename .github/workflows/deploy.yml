@@ -6,23 +6,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          path: source
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -30,16 +23,34 @@ jobs:
           node-version: '24'
       
       - name: Install dependencies
+        working-directory: source
         run: npm ci
       
       - name: Build
+        working-directory: source
         run: npm run build
       
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Checkout target repository
+        uses: actions/checkout@v4
         with:
-          path: './out'
+          repository: adriankentsato/adriankentsato.github.io
+          path: target
+          token: ${{ secrets.PAT }}
       
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Clear target directory
+        run: |
+          cd target
+          find . -mindepth 1 -delete
+          cd ..
+      
+      - name: Copy built files
+        run: cp -r source/out/* target/
+      
+      - name: Commit and push
+        working-directory: target
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Deploy from web-profile"
+          git push
