@@ -17,20 +17,20 @@ export default function AboutSection({ description, about }: AboutSectionProps) 
         <ScrollReveal direction="up">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">About Me</h1>
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
               {description}
             </p>
             <div className="mt-8">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">My Journey</h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                 {about.journey}
               </p>
             </div>
             <div className="mt-8">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">What I Do</h2>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+              <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2 text-justify">
                 {about.whatIDo.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index} className="pl-2">{item}</li>
                 ))}
               </ul>
             </div>

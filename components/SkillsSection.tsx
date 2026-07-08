@@ -88,15 +88,6 @@ interface SkillsSectionProps {
   skills: SkillCategory[];
 }
 
-// Function to calculate optimal grid columns based on item count
-function calculateGridColumns(itemCount: number): number {
-  if (itemCount <= 6) return 2;
-  if (itemCount <= 12) return 3;
-  if (itemCount <= 18) return 4;
-  if (itemCount <= 24) return 5;
-  return 6;
-}
-
 export default function SkillsSection({ skills }: SkillsSectionProps) {
   return (
     <section id="skills" className="py-20">
@@ -111,13 +102,13 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
                 <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                   {category.category}
                 </h2>
-                <div className="flex flex-wrap gap-3">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-3">
                   {category.skills.map((skill, skillIndex) => {
                     const IconComponent = iconMap[skill.icon];
                     return (
                       <div
                         key={skillIndex}
-                        className="w-[calc(12.5%-12px)] min-w-[100px] bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm p-3 flex flex-col items-center justify-center hover:shadow-md transition-shadow duration-300"
+                        className="bg-gray-50 dark:bg-gray-700 rounded-lg shadow-sm p-3 flex flex-col items-center justify-center hover:shadow-md transition-shadow duration-300"
                       >
                         {IconComponent && (
                           <IconComponent className="w-8 h-8 text-blue-600 dark:text-blue-400 mb-2" />
