@@ -32,6 +32,10 @@ jobs:
       
       - name: Checkout target repository
         run: |
+          if [ -z "${{ secrets.PAT }}" ]; then
+            echo "PAT secret is not set"
+            exit 1
+          fi
           git clone https://${{ secrets.PAT }}@github.com/adriankentsato/adriankentsato.github.io.git target
       
       - name: Clear target directory
