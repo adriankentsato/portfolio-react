@@ -28,7 +28,7 @@ export default function AboutSection({ description, about }: AboutSectionProps) 
             </div>
             <div className="mt-8">
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">What I Do</h2>
-              <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2 text-justify">
+              <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2">
                 {about.whatIDo.map((item, index) => (
                   <li key={index} className="pl-2">{item}</li>
                 ))}

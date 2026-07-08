@@ -22,15 +22,16 @@ export default function ExperienceModal({ isOpen, experience, onClose }: Experie
 
   return (
     <div 
-      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-start sm:items-center justify-center z-50 p-4 pt-12 sm:pt-4"
       onClick={onClose}
     >
       <div 
-        className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[calc(100dvh-200px)] sm:max-h-[calc(100vh-200px)] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6">
-          <div className="flex justify-between items-start mb-6">
+        {/* Fixed Header - Non-scrollable */}
+        <div className="flex-shrink-0 p-6 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex justify-between items-start">
             <div className="flex items-start gap-4">
               {experience.logo && (
                 <img
@@ -75,7 +76,10 @@ export default function ExperienceModal({ isOpen, experience, onClose }: Experie
               </button>
             </div>
           </div>
-          
+        </div>
+        
+        {/* Scrollable Content */}
+        <div className="flex-1 overflow-y-auto p-6">
           <div className="mb-6">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Description</h3>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
